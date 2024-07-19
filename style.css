@@ -1,0 +1,210 @@
+html,
+body {
+    display: flex;
+    align-items: center;
+    background-color: #F5D04E;
+}
+
+.card {
+    border-radius: 16px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 0px black,
+        -10px -10px 0px #F5D04E;
+    border: solid 1px black;
+    width: 350px;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.card-img {
+    max-width: 90%;
+    max-height: 80%;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-botton {
+    background-color: #F5D04E;
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 15%;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-botton p {
+    margin-top: -1px;
+    margin-left: -5px;
+    color: #111;
+    font-weight: bold;
+}
+
+.botton-pra {
+    font-size: 14px;
+    color: black;
+    padding: 10px 20px;
+    margin-top: 8px;
+    margin-left: 2px;
+    font-weight: bold;
+}
+
+.mean-tile {
+    font-weight: bolder;
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.mean-pra {
+    font-size: 16px;
+    color: #858585;
+    margin-left: 20px;
+    margin-top: 5px;
+    max-width: 86%;
+    overflow: hidden;
+}
+
+.card-profile {
+    display: flex;
+    margin: 15px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+}
+
+.card-profile p {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.footer {
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 10px 0;
+}
+
+.footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* break point */
+
+@media screen and (min-width: 1440px) {
+    .card {
+        width: 35%;
+        height: 40%;
+    }
+
+    .card-img {
+        height: 40%;
+        width: 100%;
+        margin: 25px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .card-img svg {
+        width: 115%;
+        height: 100%;
+        border-radius: 20px;
+        margin-left: -6%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .card-botton {
+        margin-top: 8%;
+        margin-left: 6%;
+        /* border: solid green; */
+        width: 40%;
+        overflow: hidden;
+    }
+
+    .card-botton p{
+        font-weight: bolder;
+        font-size: 20px;
+        overflow: hidden;
+    }
+    
+    .botton-pra{
+        margin-top: 5%;
+        margin-left: 3%;
+        font-size: 18px;
+        overflow: hidden;
+    }
+
+    .mean-tile{
+        font-weight: bolder;
+        font-size: 30px;
+        margin-left: 6%;
+        margin-top: 4%;
+        overflow: hidden;
+    }
+    .mean-pra{
+        overflow: hidden;
+        margin-left: 6%;
+        margin-top: 6%;
+        font-size: 19px;
+        overflow: hidden;
+    }
+    .card-profile{
+        margin-left: 6%;
+        margin-top: 5%;
+        overflow: hidden;
+    }
+    .profile-img{
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+    }
+    .card-profile p{
+        margin-top: 20px;
+        margin-left: 4%;
+        font-weight: bolder;
+        font-size: 19px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 85%;
+        overflow: hidden;
+    }
+
+    .card-botton p {
+        margin-left: -8px;
+    }
+
+    .mean-tile {
+        overflow: hidden;
+    }
+
+    .mean-pra {
+        overflow: hidden;
+    }
+
+    .card-profile {
+        overflow: hidden;
+    }
+}
