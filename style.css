@@ -109,23 +109,26 @@ body {
 
 @media screen and (min-width: 1440px) {
     .card {
-        width: 35%;
-        height: 40%;
+        width: 30%;
+        height: 50%;
+        overflow:hidden;
+        /* border: solid green 10px; */
     }
 
     .card-img {
         height: 40%;
         width: 100%;
-        margin: 25px;
+        margin: 25px 20px 10px;
         border-radius: 15px;
         overflow: hidden;
+        /* border: solid orange 2px; */
     }
 
     .card-img svg {
         width: 115%;
-        height: 100%;
+        height: auto;
         border-radius: 20px;
-        margin-left: -6%;
+        margin-left: -5%;
         top: 0;
         bottom: 0;
         left: 0;
@@ -133,10 +136,10 @@ body {
     }
 
     .card-botton {
-        margin-top: 8%;
+        margin-top: 6%;
         margin-left: 6%;
         /* border: solid green; */
-        width: 40%;
+        max-width: 25%;
         overflow: hidden;
     }
 
@@ -147,7 +150,7 @@ body {
     }
     
     .botton-pra{
-        margin-top: 5%;
+        margin-top: 3%;
         margin-left: 3%;
         font-size: 18px;
         overflow: hidden;
@@ -157,13 +160,13 @@ body {
         font-weight: bolder;
         font-size: 30px;
         margin-left: 6%;
-        margin-top: 4%;
+        margin-top: 3%;
         overflow: hidden;
     }
     .mean-pra{
         overflow: hidden;
         margin-left: 6%;
-        margin-top: 6%;
+        margin-top: 4%;
         font-size: 19px;
         overflow: hidden;
     }
@@ -173,19 +176,18 @@ body {
         overflow: hidden;
     }
     .profile-img{
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
         overflow: hidden;
     }
     .card-profile p{
-        margin-top: 20px;
+        margin-top: 12px;
         margin-left: 4%;
         font-weight: bolder;
         font-size: 19px;
         overflow: hidden;
     }
 }
-
 @media screen and (max-width: 375px) {
     .card {
         width: 85%;
