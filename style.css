@@ -109,8 +109,8 @@ body {
 
 @media screen and (min-width: 1440px) {
     .card {
-        width: 30%;
-        height: 50%;
+        width: 400px;
+        height: 600px;
         overflow:hidden;
         /* border: solid green 10px; */
     }
