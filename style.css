@@ -11,8 +11,8 @@ body {
     box-shadow: 10px 10px 0px black,
         -10px -10px 0px #F5D04E;
     border: solid 1px black;
-    width: 350px;
-    height: 500px;
+    width: 300px;
+    height: 470px;
     margin: auto;
     position: absolute;
     top: 0;
@@ -24,7 +24,8 @@ body {
 .card-img {
     max-width: 90%;
     max-height: 80%;
-    margin: 20px auto;
+    margin: 15px auto;
+    margin-top: 20px;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -34,34 +35,49 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
     max-width: 15%;
-    height: 20px;
-    margin-top: 20px;
+    height: 15px;
     margin-left: 20px;
     text-align: center;
     overflow: hidden;
+    font-family: 'CustomFont';
+    /* border: solid blue 2px; */
 }
 
 .card-botton p {
-    margin-top: -1px;
-    margin-left: -5px;
+    margin-top: auto;
+    margin-left: -6px;
     color: #111;
-    font-weight: bold;
+    font-size: 15px;
 }
-
+@font-face{
+    font-family: 'publicFont';
+    src: url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 .botton-pra {
-    font-size: 14px;
-    color: black;
+    font-size: 12px;
+    color: #161515;
     padding: 10px 20px;
-    margin-top: 8px;
+    margin-top: 5px;
     margin-left: 2px;
     font-weight: bold;
+    font-family: 'publicFont', sans-serif;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .mean-tile {
+    font-family: 'CustomFont', sans-serif;
     font-weight: bolder;
     font-size: 22px;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: 2px;
     margin-bottom: 15px;
 }
 
@@ -69,7 +85,7 @@ body {
     font-size: 16px;
     color: #858585;
     margin-left: 20px;
-    margin-top: 5px;
+    margin-top: -2px;
     max-width: 86%;
     overflow: hidden;
 }
@@ -80,30 +96,17 @@ body {
 }
 
 .profile-img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
 
 .card-profile p {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 2px;
+    font-family: 'CustomFont';
+    margin-left: 8px;
     font-weight: bold;
 }
 
-.footer {
-    font-size: 11px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #e0e0e0;
-    padding: 10px 0;
-}
-
-.footer a {
-    color: hsl(228, 45%, 44%);
-}
 
 /* break point */
 
@@ -188,6 +191,7 @@ body {
         overflow: hidden;
     }
 }
+
 @media screen and (max-width: 375px) {
     .card {
         width: 85%;
@@ -210,3 +214,4 @@ body {
         overflow: hidden;
     }
 }
+
